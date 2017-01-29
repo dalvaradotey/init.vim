@@ -1,35 +1,31 @@
-
 " ########################################################
 " ############### PLUGINS INSTALL & IMPORTS ##############
 " ########################################################
 call plug#begin()
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-Plug 'KeitaNakamura/neodark.vim'
-Plug 'matze/vim-move'
-Plug 'Yggdroot/indentLine'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'airblade/vim-gitgutter'
-Plug 'cohama/lexima.vim'
-Plug 'kien/ctrlp.vim'
-Plug 'ryanoasis/vim-devicons'
-Plug 'scrooloose/syntastic'
-Plug 'fatih/vim-go'
-Plug 'https://github.com/yosssi/vim-ace'
-Plug 'https://github.com/pangloss/vim-javascript'
-Plug 'cakebaker/scss-syntax.vim'
+  Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+  Plug 'KeitaNakamura/neodark.vim'
+  Plug 'matze/vim-move'
+  Plug 'Yggdroot/indentLine'
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'cohama/lexima.vim'
+  Plug 'kien/ctrlp.vim'
+  Plug 'ryanoasis/vim-devicons'
+  Plug 'scrooloose/syntastic'
+  Plug 'fatih/vim-go'
+  Plug 'https://github.com/yosssi/vim-ace'
+  Plug 'https://github.com/pangloss/vim-javascript'
+  Plug 'cakebaker/scss-syntax.vim'
 call plug#end()
 " #########################################
 " ############ GENERAL CONFIGS ############
 " #########################################
 " -> Set leader key
-let mapleader      =' '
-let maplocalleader =' '
+let mapleader =' '
 " -> Set color
 colorscheme neodark
 " -> Save files map keys
-" nnoremap <leader>w :w<CR>
-" inoremap <leader>w <C-c>:w<CR>
 nnoremap <silent><Leader>w :w<CR>
 " -> Set line number available
 set number
@@ -42,13 +38,13 @@ set expandtab
 " #########################################
 " ############ PLUGIN CONFIGS #############
 " #########################################
-" -> Theme Neo dark <-
+" -> Neo dark theme <-
 let g:neodark#background                ='gray'
 let g:neodark#use_256color              =1
 let g:neodark#use_custom_terminal_theme =1
 " -> Ident line <-
 let g:indentLine_char ='|'
-" -> Lighline <-
+" -> Lightline <-
 let g:lightline ={}
 let g:lightline.colorscheme ='neodark'
 " -> NerdTree <-
